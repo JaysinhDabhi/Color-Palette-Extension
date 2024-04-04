@@ -1,0 +1,58 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 20px 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+#colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Adjust as needed */
+}
+
+.color:hover {
+  filter: brightness(85%);
+}
+
+.color::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color);
+  border-radius: inherit;
+}
+
+/* Adjust popup size */
+body {
+  width: 200px; /* Adjust as needed */
+  height: 250px; /* Adjust as needed */
+}
+
+/* Change text color on hover */
+#link:hover {
+  color: rgb(126, 70, 255); /* Change to desired color */
+}
+
+/* Style the message */
+#message {
+  display: none;
+  color: green;
+  font-weight: bold;
+}
